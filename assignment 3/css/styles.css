@@ -1,0 +1,198 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color:#b30000;
+}
+
+
+/** HEADER **/
+#header-nav{
+  background-color: #ffd50f;
+  border-radius: 0;
+  border: 0;
+}
+#logo-img{
+  background: url('../images/restaurant-logo_large.png') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand h1{            /*Restaurant name*/
+  text-decoration: none;
+  font-weight: bold;
+  color: #660033;
+  font-family: 'Caladea', serif;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #000;
+  margin-top: 45px;
+  font-size: 2em;
+}
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+#phone a{
+  border: white solid;
+}
+#phone div{
+  font-size: 1.5em;
+  font-weight: bold;
+  color:  #951C49;
+  padding-top: 10px;
+  text-align: right;
+}
+/* END HEADER */
+
+/* FOOTER */
+.panel-footer {
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+#hours, #address {
+  line-height: 2;
+}
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+#address p {
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+/*END FOOTER*/
+
+  /*MAIN CONTENT*/
+#main-content h2{
+  text-shadow: 2px 2px 2px #000;
+}
+.head-title{
+  position: relative;
+  margin-bottom: 30px;
+}
+.head-title > h3{
+  background-color: black;
+  text-align: center;
+  opacity: .8;
+  color: #fff;
+  padding: 10px 0 10px;
+  font-size: 1.3em;
+}
+.head-title img{
+  border: 1px black;
+  box-shadow: 1px 1px 1px #000;
+  margin: 0 auto 15px;
+}
+.head-title p{
+  width: 90%;
+  margin: auto;
+}
+
+/********** Large devices only **********/
+
+@media (min-width: 1200px) {
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  #logo-img{
+    background: url('../images/restaurant-logo_medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 15px 5px 10px 0;
+  }
+  .navbar-brand h1{            /*Restaurant name*/
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 30px;
+  font-size: 2em;
+  }
+
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  #logo-img{
+    background: url('../images/restaurant-logo_medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 15px 5px 10px 0;
+  }
+  .navbar-brand h1{            /*Restaurant name*/
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 30px;
+  font-size: 2em;
+  }
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  /*FOOTER*/
+  .row > section{
+    text-align: center;
+  }
+  panel-footer .row > section:nth-child(3){
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+  panel-footer .row section hr{
+    width: 75%;
+  }
+  /*END FOOTER*/
+
+  /*HEADER*/
+  .head-title{
+    width: 85%;
+    margin: auto;
+  }
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  
+  .hidden-xxs {
+    display: none !important;
+  }
+  /* End Header */
+}
